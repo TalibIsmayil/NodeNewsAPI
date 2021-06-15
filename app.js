@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const routes = require('./routes/news');
-const userRoutes = require('./routes/user');
+const userRoutes = require('./routes/auth');
 require('dotenv/config');
 const mongoose = require('mongoose');
 
@@ -11,7 +11,7 @@ const { json } = require('body-parser');
 app.use(bodyParser.json());
 
 app.use('/news', routes);
-app.use('/', routes);
+app.use('/', userRoutes);
 
 mongoose.connect(process.env.CONNECTION, { useNewUrlParser: true }, () => 
 console.log('connected')
