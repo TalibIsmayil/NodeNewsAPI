@@ -8,20 +8,20 @@ const bcrypt = require('bcrypt');
 //VALIDATION
 const Joi = require('@hapi/joi');
 
-const scheme = {
-    name: Joi.string().min(6).required(),
+const scheme = Joi.object({
+    name: Joi.string().min(1).required(),
     email: Joi.string().min(6).required().email(),
     password: Joi.string().min(6).required(),
-}
+});
 
-const scheme2 = {
+const scheme2 = Joi.object({
     email: Joi.string().min(6).required().email(),
     password: Joi.string().min(6).required(),
-}
+});
 
 router.post('/register', async (req, res) => {
-    //const {error} = Joi.validate(req.body, scheme);
-    //if (error) return res.status(400).send(error.details[0].message);
+    const {error} = scheme.validate(req.body);
+    if (error) return res.status(400).json({message: error.message});
 
     const emailExist = await User.findOne({email: req.body.email});
     if(emailExist) return res.status(400).send('Email already exists');
@@ -44,8 +44,8 @@ router.post('/register', async (req, res) => {
 });
 
 router.post('/login', async (req, res) => {
-    //const {error} = Joi.validate(req.body, scheme2);
-    //if (error) return res.status(400).send(error.details[0].message);
+    const {error} = scheme2.validate(req.body);
+    if (error) return res.status(400).json({message: error.message});
 
     const user = await User.findOne({email: req.body.email});
     if(!user) return res.status(400).send('Email or password is wrong!');
@@ -53,8 +53,11 @@ router.post('/login', async (req, res) => {
     const validPass = await bcrypt.compare(req.body.password, user.password);
     if(!validPass) return res.status(400).send('Invalid password');
 
-    const token = jwt.sign({_id: user._id}, 'myStrongSecret123');
-    res.json({token: token});
+    const token = jwt.sign({_id: user._id}, 'myStrongSecret123',{
+        expiresIn: '90d',
+      });
+    res.json({name: user.name,
+        token: token});
 });
 
 

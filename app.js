@@ -10,7 +10,7 @@ const { json } = require('body-parser');
 
 app.use(bodyParser.json());
 
-app.use('/news', routes);
+app.use('/', routes);
 app.use('/', userRoutes);
 
 mongoose.connect(process.env.CONNECTION, { useNewUrlParser: true }, () => 

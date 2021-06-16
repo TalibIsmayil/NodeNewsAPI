@@ -1,14 +1,15 @@
 const { func } = require('@hapi/joi');
 const jwt = require('jsonwebtoken');
 
-function auth(req,res,next) {
-    const token = req.header('auth-token');
-    if(!token) return res.status(401).send('Access Denied');
+module.exports = function(req,res,next) {
+    const authHeader = req.headers['authorization'];
 
-    try{
-        const verified = jwt.verify(token,'myStrongSecret123');
-        req.user = verified;
-    }catch{
-        res.status(400).send('Invalid Token');
-    }
+    const token = authHeader && authHeader.split(' ')[1];
+    if(token == null) return res.status(401).json({message: 'Access Denied'});
+
+    jwt.verify(token,'myStrongSecret123', (err, user) =>{
+        if(err) return res.status(401).json({message: 'Access Denied'});
+        req.user = user;
+        next();
+    });
 }
