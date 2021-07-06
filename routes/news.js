@@ -3,6 +3,9 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const News = require('../models/News');
 const verify = require('./verifyToken');
+const jwt = require('jsonwebtoken');
+const Product = require('../models/Product');
+
 
 const sizes = [
     "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48"
@@ -43,69 +46,75 @@ const newsMedia = [
 const reviews = [
     {
         reviewId: 1,
+        productId: 7,
         fullName: "",
         photo: "",
         comment: "",
-        rating: "",
+        rating: 4.9,
         date: ""
     },
     {
         reviewId: 2,
+        productId: 7,
         fullName: "",
         photo: "",
         comment: "",
-        rating: "",
+        rating: 4.7,
         date: ""
     },
     {
         reviewId: 3,
+        productId: 7,
         fullName: "",
         photo: "",
         comment: "",
-        rating: "",
+        rating: 4.8,
         date: ""
     },
     {
         reviewId: 4,
+        productId: 7,
         fullName: "",
         photo: "",
         comment: "",
-        rating: "",
+        rating: 4.9,
         date: ""
     },
     {
         reviewId: 5,
+        productId: 7,
         fullName: "",
         photo: "",
         comment: "",
-        rating: "",
+        rating: 4.5,
         date: ""
     },
     {
         reviewId: 6,
+        productId: 7,
         fullName: "",
         photo: "",
         comment: "",
-        rating: "",
+        rating: 4.7,
         date: ""
     }
 ]
 
 const advertismentProducts = [
     {
-        productId: 1,
+        advertismentId: 1,
         title: "Super Flash Sale 50% Off",
         image: "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjBzaG9lc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
         date: "08:34:52"
     },
     {
-        productId: 2,
+        advertismentId: 2,
         title: "Mega Sale 80% Off",
         image: "https://cdn.stocksnap.io/img-thumbs/960w/nike-shoes_0R37EU64ZH.jpg",
         date: "15:14:43"
     },
     {
-        productId: 3,
+        advertismentId: 3,
         title: "Super Mega Sale 90% Off",
         image: "https://c0.wallpaperflare.com/preview/762/772/865/pair-of-white-and-blue-air-jordan-1-s.jpg",
         date: "21:34:12"
@@ -159,6 +168,7 @@ const products = [
     {
         productId: 1,
         title: "Nike Sportswear Futura Luxe",
+        specification: "",
         thumbnailImage: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/aa59e8dd-8e26-4fac-90ff-c85f4bdb4b80/sportswear-futura-luxe-%C3%A7apraz-%C3%A7antas%C4%B1-SPHsqZ.png",
         images: [
             "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/aa59e8dd-8e26-4fac-90ff-c85f4bdb4b80/sportswear-futura-luxe-%C3%A7apraz-%C3%A7antas%C4%B1-SPHsqZ.png",
@@ -179,6 +189,7 @@ const products = [
     {
         productId: 2,
         title: "Nike Air Max 90 LX",
+        specification: "",
         thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c089ca4a-23bb-411b-b826-7c6fd7e7d0f1/air-max-90-60-ayakkab%C4%B1s%C4%B1-DQbQ5r.png",
         images: [
             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c089ca4a-23bb-411b-b826-7c6fd7e7d0f1/air-max-90-60-ayakkab%C4%B1s%C4%B1-DQbQ5r.png",
@@ -199,6 +210,7 @@ const products = [
     {
         productId: 3,
         title: "Jordan Max Aura 2",
+        specification: "",
         thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/81e221df-6553-48db-861d-329cb581cc59/jordan-max-aura-2-ayakkab%C4%B1s%C4%B1-vssjMJ.png",
         images: [
             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/81e221df-6553-48db-861d-329cb581cc59/jordan-max-aura-2-ayakkab%C4%B1s%C4%B1-vssjMJ.png",
@@ -218,6 +230,7 @@ const products = [
     {
         productId: 4,
         title: "Nike Air Force 1 Low",
+        specification: "",
         thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/b4ddd9bb-a650-423a-9cd9-a276f3a56edf/air-force-1-low-ayakkab%C4%B1-hb72wk.png",
         images: [
             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/b4ddd9bb-a650-423a-9cd9-a276f3a56edf/air-force-1-low-ayakkab%C4%B1-hb72wk.png",
@@ -239,6 +252,7 @@ const products = [
     {
         productId: 5,
         title: "Nike Air Force 1 Mid By You",
+        specification: "",
         thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0499abab-0fea-4aa7-a712-83e1911492eb/custom-nike-air-force-1-mid-by-you.png",
         images: [
             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0499abab-0fea-4aa7-a712-83e1911492eb/custom-nike-air-force-1-mid-by-you.png",
@@ -256,6 +270,7 @@ const products = [
     {
         productId: 6,
         title: "Jordan MA2",
+        specification: "",
         thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/fb5fdd9f-a9d0-4bcc-8258-d4fbf6751de0/jordan-ma2-ayakkab%C4%B1-dmkgC9.png",
         images: [
             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/fb5fdd9f-a9d0-4bcc-8258-d4fbf6751de0/jordan-ma2-ayakkab%C4%B1-dmkgC9.png",
@@ -275,6 +290,7 @@ const products = [
     {
         productId: 7,
         title: "Jordan MA2",
+        specification: "",
         thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/be84ba96-30c0-4d79-a0fe-978e5dde301b/jordan-ma2-ayakkab%C4%B1s%C4%B1-Pd6D4H.png",
         images: [
             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/be84ba96-30c0-4d79-a0fe-978e5dde301b/jordan-ma2-ayakkab%C4%B1s%C4%B1-Pd6D4H.png",
@@ -294,6 +310,7 @@ const products = [
     {
         productId: 8,
         title: "",
+        specification: "",
         thumbnailImage: "",
         images: [],
         rating: 4.7,
@@ -304,6 +321,7 @@ const products = [
     {
         productId: 9,
         title: "",
+        specification: "",
         thumbnailImage: "",
         images: [],
         rating: 4.7,
@@ -314,6 +332,7 @@ const products = [
     {
         productId: 10,
         title: "",
+        specification: "",
         thumbnailImage: "",
         images: [],
         rating: 4.7,
@@ -324,6 +343,7 @@ const products = [
     {
         productId: 11,
         title: "",
+        specification: "",
         thumbnailImage: "",
         images: [],
         rating: 4.7,
@@ -334,6 +354,7 @@ const products = [
     {
         productId: 12,
         title: "",
+        specification: "",
         thumbnailImage: "",
         images: [],
         rating: 4.7,
@@ -344,6 +365,7 @@ const products = [
     {
         productId: 13,
         title: "",
+        specification: "",
         thumbnailImage: "",
         images: [],
         rating: 4.7,
@@ -354,6 +376,7 @@ const products = [
     {
         productId: 14,
         title: "",
+        specification: "",
         thumbnailImage: "",
         images: [],
         rating: 4.7,
@@ -364,6 +387,7 @@ const products = [
     {
         productId: 15,
         title: "",
+        specification: "",
         thumbnailImage: "",
         images: [],
         rating: 4.7,
@@ -378,14 +402,17 @@ const homePage = {
     categories: categories.filter((val, i) => i < 6),
     items: [
         {
+            advertismentId: 1,
             title: "Flash Sale",
             products: products.slice(0, 5)
         },
         {
+            advertismentId: 2,
             title: "Mega Sale",
             products: products.slice(5, 10)
         },
         {
+            advertismentId: 4,
             title: "Recomended Product",
             products: products.slice(10, 15)
         }
@@ -404,14 +431,168 @@ router.get('/categories', verify, async (req, res) => {
     res.json(categories);
 });
 
+router.get('/offer-screen/:id', verify, async (req, res) => {
+    const advertisment = advertismentProducts.find(o => o.advertismentId == req.params.id)
+    if (advertisment != null) {
+        res.json({
+            title: advertisment.title,
+            image: advertisment.image,
+            products: products
+        });
+    }
+    res.status(404).json({ message: "Advertisment Not found" })
+});
+
 router.get('/product-detail/:id', verify, async (req, res) => {
     const product = products.find(o => o.productId == req.params.id)
     if (product != null) {
-        res.json({ info: product, sizes: sizes, 
-            specification: `${product.title} combines a full-length React foam midsole with a 270 Max Air unit for unrivaled comfort and a striking visual experience.`,
-        reviews: reviews});
+        res.json({
+            info: product, sizes: sizes,
+            specification: product.specification,
+            topReview: reviews[Math.floor(Math.random() * reviews.length)]
+        });
     }
-    res.json({ message: "Product Not found" })
+    res.status(404).json({ message: "Product Not found" })
+});
+
+router.get('/reviews/:id', verify, async (req, res) => {
+    const review = reviews.filter(o => o.productId == req.params.id)
+    if (review.length > 0) {
+        res.json({ count: review.length, reviews: review });
+    }
+    res.status(404).json({ message: "Reviews Not found" })
+});
+
+
+router.post('/add-to-cart/:id', async (req, res) => {
+    const authHeader = req.headers['authorization'];
+
+    const token = authHeader && authHeader.split(' ')[1];
+
+    if (token == null) return res.status(401).json({ message: 'Access Denied' });
+
+    jwt.verify(token, 'myStrongSecret123', async (err, user) => {
+        if (err) {
+            return res.status(401).json({ message: 'Access Denied' });
+        }
+        const product = products.find(o => o.productId == req.params.id)
+        if (product != null) {
+            const productExist = await Product.findOne({ userId: user._id, productId: req.params.id});
+            if (productExist) {
+                try{
+                    await Product.updateOne(
+                        {_id: productExist._id},
+                        {$set: {count: productExist.count + 1}}
+                    );
+                    const productExist2 = await Product.findOne({ userId: user._id, productId: req.params.id});
+                    res.json({data: productExist2});
+                }catch(e){
+                    res.json({message: e});
+                }
+            } else {
+                const productModel = new Product({
+                    productTitle: product.title,
+                    image: product.thumbnailImage,
+                    price: product.price,
+                    count: 1,
+                    userId: user._id,
+                    productId: product.productId
+                });
+
+                productModel.save().then(data => {
+                    res.json({ data: data });
+                }).catch(er => {
+                    res.json(er);
+                });
+            }
+
+        } else {
+            res.status(404).json({ message: "Product Not found" })
+        }
+    });
+});
+
+router.get('/notifications', verify, async (req, res) => {
+    res.json({
+        offerCount: Math.floor(Math.random() * 10),
+        feedCount: Math.floor(Math.random() * 10),
+        activityCount: Math.floor(Math.random() * 10),
+    });
+});
+
+router.get('/notifications/offer', verify, async (req, res) => {
+    res.json([{
+        title: "SUMMER OFFER 98% Cashback",
+        description: "Culpa cillum consectetur labore nulla nulla magna irure. Id veniam culpa officia aute dolor",
+        date: "April 30, 2021 3:01 PM"
+    },
+    {
+        title: "Special Offer 25% OFF",
+        description: "Culpa cillum consectetur labore nulla nulla magna irure. Id veniam culpa officia aute dolor",
+        date: "April 28, 2021 1:13 PM"
+    },
+    {
+        title: "Buy 1 get 1 FREE",
+        description: "Culpa cillum consectetur labore nulla nulla magna irure. Id veniam culpa officia aute dolor",
+        date: "April 25, 2021 2:07 PM"
+    }]);
+});
+
+router.get('/notifications/feed', verify, async (req, res) => {
+    res.json([
+        {
+            title: "New Product",
+            description: "Nike Air Force 1 Pixel - Special For your Activity",
+            image: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/10bad0b9-abd3-47e2-8fc0-1323d2f6a3f2/air-force-1-pixel-ayakkab%C4%B1s%C4%B1-txmVNP.png",
+            date: "April 29, 2021 3:01 PM"
+        },
+        {
+            title: "New Product",
+            description: "Nike Air Force 1 Low - Special For your Activity",
+            image: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/5768b674-e92e-4e0a-a565-c4ce648e8b08/air-force-1-low-ayakkab%C4%B1s%C4%B1-r57dLb.png",
+            date: "April 25, 2021 9:21 PM"
+        },
+        {
+            title: "New Product",
+            description: "Nike Air Force 1 '07 - Special For your Activity",
+            image: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/ba95261f-1a8d-4f39-812e-b2e9ace8ada8/air-force-1-07-ayakkab%C4%B1s%C4%B1-7DX06H.png",
+            date: "April 21, 2021 1:25 PM"
+        }]);
+});
+
+router.get('/notifications/activity', verify, async (req, res) => {
+    res.json([{
+        title: "Transaction Nike Air Zoom Product",
+        description: "Culpa cillum consectetur labore nulla nulla magna irure. Id veniam culpa officia aute dolor",
+        date: "April 28, 2021 3:15 PM"
+    },
+    {
+        title: "Transaction Nike Air Zoom Pegasus 36 Miami",
+        description: "Culpa cillum consectetur labore nulla nulla magna irure. Id veniam culpa officia aute dolor",
+        date: "April 24, 2021 1:01 PM"
+    },
+    {
+        title: "Transaction Nike Air Max",
+        description: "Culpa cillum consectetur labore nulla nulla magna irure. Id veniam culpa officia aute dolor",
+        date: "April 19, 2021 3:21 PM"
+    }]);
+});
+
+router.get('/search', verify, async (req, res) => {
+    const product = products.filter(o => o.title.toLowerCase().includes(req.query.key.toLowerCase()))
+    if (product.length > 0) {
+        res.json({ count: product.length, products: product });
+    }
+    res.status(404).json({ message: "Product Not found" })
+});
+
+router.get('/cart', verify, async (req, res) => {
+    try{
+        const productsInCart = await Product.find({"userId": "60c8da263edd5e17ae775b0e"});
+        res.json({data: productsInCart})
+    }catch(er){
+        res.json({message: er})
+    }
 });
 
 router.post('/', (req, res) => {

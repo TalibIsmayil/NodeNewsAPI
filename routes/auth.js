@@ -24,7 +24,8 @@ router.post('/register', async (req, res) => {
     if (error) return res.status(400).json({message: error.message});
 
     const emailExist = await User.findOne({email: req.body.email});
-    if(emailExist) return res.status(400).send('Email already exists');
+    if(emailExist) return res.status(403).json({message: 'Email already exists'
+    });
 
     const salt = await bcrypt.genSalt(10);
     const hashPassword = await bcrypt.hash(req.body.password, salt);
@@ -37,7 +38,7 @@ router.post('/register', async (req, res) => {
 
     
     user.save().then(data => {
-        res.json(data);
+        res.json({name: data.name,message: 'Register successfully completed'});
     }).catch(err => {
         res.json(err);
     });
@@ -48,16 +49,17 @@ router.post('/login', async (req, res) => {
     if (error) return res.status(400).json({message: error.message});
 
     const user = await User.findOne({email: req.body.email});
-    if(!user) return res.status(400).send('Email or password is wrong!');
+    if(!user) return res.status(403).json({message: 'Email or password is wrong!'});
 
     const validPass = await bcrypt.compare(req.body.password, user.password);
-    if(!validPass) return res.status(400).send('Invalid password');
+    if(!validPass) return res.status(403).json({message: 'Invalid password'});
 
     const token = jwt.sign({_id: user._id}, 'myStrongSecret123',{
         expiresIn: '90d',
       });
     res.json({name: user.name,
-        token: token});
+        photo: "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
+        token: token,message: 'Successfully logged in'});
 });
 
 
