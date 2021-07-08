@@ -477,17 +477,17 @@ router.post('/add-to-cart/:id', async (req, res) => {
         }
         const product = products.find(o => o.productId == req.params.id)
         if (product != null) {
-            const productExist = await Product.findOne({ userId: user._id, productId: req.params.id});
+            const productExist = await Product.findOne({ userId: user._id, productId: req.params.id });
             if (productExist) {
-                try{
+                try {
                     await Product.updateOne(
-                        {_id: productExist._id},
-                        {$set: {count: productExist.count + 1}}
+                        { _id: productExist._id },
+                        { $set: { count: productExist.count + 1 } }
                     );
-                    const productExist2 = await Product.findOne({ userId: user._id, productId: req.params.id});
-                    res.json({data: productExist2});
-                }catch(e){
-                    res.json({message: e});
+                    const productExist2 = await Product.findOne({ userId: user._id, productId: req.params.id });
+                    res.json({ data: productExist2 });
+                } catch (e) {
+                    res.json({ message: e });
                 }
             } else {
                 const productModel = new Product({
@@ -579,20 +579,109 @@ router.get('/notifications/activity', verify, async (req, res) => {
 });
 
 router.get('/search', verify, async (req, res) => {
-    const product = products.filter(o => o.title.toLowerCase().includes(req.query.key.toLowerCase()))
+    if(req.query.key != null && req.query.key != ''){
+        const product = products.filter(o => o.title.toLowerCase().includes(req.query.key.toLowerCase()))
     if (product.length > 0) {
         res.json({ count: product.length, products: product });
     }
     res.status(404).json({ message: "Product Not found" })
+    }else{
+        res.status(404).json({ message: "Product Not found" })
+    }
 });
 
-router.get('/cart', verify, async (req, res) => {
-    try{
-        const productsInCart = await Product.find({"userId": "60c8da263edd5e17ae775b0e"});
-        res.json({data: productsInCart})
-    }catch(er){
-        res.json({message: er})
-    }
+router.get('/cart', async (req, res) => {
+    const authHeader = req.headers['authorization'];
+
+    const token = authHeader && authHeader.split(' ')[1];
+
+    if (token == null) return res.status(401).json({ message: 'Access Denied' });
+
+    jwt.verify(token, 'myStrongSecret123', async (err, user) => {
+        if (err) {
+            return res.status(401).json({ message: 'Access Denied' });
+        }
+        try {
+            const productsInCart = await Product.find({ "userId": user._id });
+            var total = 0;
+            for (var i in productsInCart) {
+                total += productsInCart[i].price;
+            }
+            res.json({ data: productsInCart, itemCount: productsInCart.length, shipping: 40.0, importCharges: 105.0 ,totalPrice: total})
+        } catch (er) {
+            res.status(500).json({ message: er })
+        }
+    });
+});
+
+router.get('/checkOut', async (req, res) => {
+    const authHeader = req.headers['authorization'];
+
+    const token = authHeader && authHeader.split(' ')[1];
+
+    if (token == null) return res.status(401).json({ message: 'Access Denied' });
+
+    jwt.verify(token, 'myStrongSecret123', async (err, user) => {
+        if (err) {
+            return res.status(401).json({ message: 'Access Denied' });
+        }
+        try {
+            await Product.deleteMany({ "userId": user._id });
+            res.json({ message: "Successfull"})
+        } catch (er) {
+            res.status(500).json({ message: er })
+        }
+    });
+});
+
+
+
+router.post('/remove-from-cart/:id', async (req, res) => {
+    const authHeader = req.headers['authorization'];
+
+    const token = authHeader && authHeader.split(' ')[1];
+
+    if (token == null) return res.status(401).json({ message: 'Access Denied' });
+
+    jwt.verify(token, 'myStrongSecret123', async (err, user) => {
+        if (err) {
+            return res.status(401).json({ message: 'Access Denied' });
+        }
+        const product = products.find(o => o.productId == req.params.id)
+        if (product != null) {
+            const productExist = await Product.findOne({ userId: user._id, productId: req.params.id });
+            if (productExist) {
+                if(productExist.count > 1){
+                    try {
+                        await Product.updateOne(
+                            { _id: productExist._id },
+                            { $set: { count: productExist.count - 1 } }
+                        );
+                    } catch (e) {
+                        res.json({ message: e });
+                    }
+                }else{
+                    await Product.deleteOne({ "userId": user._id,"productId": req.params.id});
+                }
+                try {
+                    const productsInCart = await Product.find({ "userId": user._id });
+                    var total = 0;
+                    for (var i in productsInCart) {
+                        total += productsInCart[i].price;
+                    }
+                    res.json({ data: productsInCart, itemCount: productsInCart.length, shipping: 40.0, importCharges: 105.0 ,totalPrice: total})
+                } catch (er) {
+                    res.json({ message: er })
+                }
+                
+            } else {
+                res.status(404).json({ message: "Product Not found" })
+            }
+
+        } else {
+            res.status(404).json({ message: "Product Not found" })
+        }
+    });
 });
 
 router.post('/', (req, res) => {
