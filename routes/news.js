@@ -46,57 +46,147 @@ const newsMedia = [
 const reviews = [
     {
         reviewId: 1,
-        productId: 7,
-        fullName: "",
-        photo: "",
-        comment: "",
+        productId: 1,
+        fullName: "Talıb İsmayılzadə",
+        photo: "https://scontent.fgyd4-2.fna.fbcdn.net/v/t1.6435-9/172375004_1948773731927161_2405534761071305864_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=SjkJrU_gLBwAX-T1ZS1&tn=VffU5FtGNLn--OnT&_nc_ht=scontent.fgyd4-2.fna&oh=3f8a9c3a35a3d2ced8895143fedd1395&oe=60EC5C29",
+        comment: "The shoes are way more cool, fantastic, fabulous, vibrant, striking and showy than I expected.I’m proud owner of Naughty Schnitzel Shoes, Das Cognac Boots and now Fuchsia Shoes.I adore each pair I've got.All of them are very comfy and durable, looking great after years and years of wearing them.Atheist Team, thank you so much for being so nice, responsive and for making great shoes.",
         rating: 4.9,
-        date: ""
+        date: "April 19, 2021 3:21 PM"
     },
     {
         reviewId: 2,
-        productId: 7,
-        fullName: "",
-        photo: "",
-        comment: "",
-        rating: 4.7,
-        date: ""
+        productId: 2,
+        fullName: "Talıb İsmayılzadə",
+        photo: "https://scontent.fgyd4-2.fna.fbcdn.net/v/t1.6435-9/172375004_1948773731927161_2405534761071305864_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=SjkJrU_gLBwAX-T1ZS1&tn=VffU5FtGNLn--OnT&_nc_ht=scontent.fgyd4-2.fna&oh=3f8a9c3a35a3d2ced8895143fedd1395&oe=60EC5C29",
+        comment: "The shoes are way more cool, fantastic, fabulous, vibrant, striking and showy than I expected.I’m proud owner of Naughty Schnitzel Shoes, Das Cognac Boots and now Fuchsia Shoes.I adore each pair I've got.All of them are very comfy and durable, looking great after years and years of wearing them.Atheist Team, thank you so much for being so nice, responsive and for making great shoes.",
+        rating: 4.9,
+        date: "April 19, 2021 3:21 PM"
     },
     {
         reviewId: 3,
-        productId: 7,
-        fullName: "",
-        photo: "",
-        comment: "",
-        rating: 4.8,
-        date: ""
-    },
-    {
-        reviewId: 4,
-        productId: 7,
-        fullName: "",
-        photo: "",
-        comment: "",
+        productId: 3,
+        fullName: "Talıb İsmayılzadə",
+        photo: "https://scontent.fgyd4-2.fna.fbcdn.net/v/t1.6435-9/172375004_1948773731927161_2405534761071305864_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=SjkJrU_gLBwAX-T1ZS1&tn=VffU5FtGNLn--OnT&_nc_ht=scontent.fgyd4-2.fna&oh=3f8a9c3a35a3d2ced8895143fedd1395&oe=60EC5C29",
+        comment: "The shoes are way more cool, fantastic, fabulous, vibrant, striking and showy than I expected.I’m proud owner of Naughty Schnitzel Shoes, Das Cognac Boots and now Fuchsia Shoes.I adore each pair I've got.All of them are very comfy and durable, looking great after years and years of wearing them.Atheist Team, thank you so much for being so nice, responsive and for making great shoes.",
         rating: 4.9,
-        date: ""
+        date: "April 19, 2021 3:21 PM"
     },
     {
-        reviewId: 5,
+        reviewId: 1,
         productId: 7,
-        fullName: "",
-        photo: "",
-        comment: "",
-        rating: 4.5,
-        date: ""
+        fullName: "Talıb İsmayılzadə",
+        photo: "https://scontent.fgyd4-2.fna.fbcdn.net/v/t1.6435-9/172375004_1948773731927161_2405534761071305864_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=SjkJrU_gLBwAX-T1ZS1&tn=VffU5FtGNLn--OnT&_nc_ht=scontent.fgyd4-2.fna&oh=3f8a9c3a35a3d2ced8895143fedd1395&oe=60EC5C29",
+        comment: "The shoes are way more cool, fantastic, fabulous, vibrant, striking and showy than I expected.I’m proud owner of Naughty Schnitzel Shoes, Das Cognac Boots and now Fuchsia Shoes.I adore each pair I've got.All of them are very comfy and durable, looking great after years and years of wearing them.Atheist Team, thank you so much for being so nice, responsive and for making great shoes.",
+        rating: 4.9,
+        date: "April 19, 2021 3:21 PM"
     },
     {
-        reviewId: 6,
+        reviewId: 1,
         productId: 7,
-        fullName: "",
-        photo: "",
-        comment: "",
-        rating: 4.7,
-        date: ""
+        fullName: "Talıb İsmayılzadə",
+        photo: "https://scontent.fgyd4-2.fna.fbcdn.net/v/t1.6435-9/172375004_1948773731927161_2405534761071305864_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=SjkJrU_gLBwAX-T1ZS1&tn=VffU5FtGNLn--OnT&_nc_ht=scontent.fgyd4-2.fna&oh=3f8a9c3a35a3d2ced8895143fedd1395&oe=60EC5C29",
+        comment: "The shoes are way more cool, fantastic, fabulous, vibrant, striking and showy than I expected.I’m proud owner of Naughty Schnitzel Shoes, Das Cognac Boots and now Fuchsia Shoes.I adore each pair I've got.All of them are very comfy and durable, looking great after years and years of wearing them.Atheist Team, thank you so much for being so nice, responsive and for making great shoes.",
+        rating: 4.9,
+        date: "April 19, 2021 3:21 PM"
+    },
+    {
+        reviewId: 1,
+        productId: 7,
+        fullName: "Talıb İsmayılzadə",
+        photo: "https://scontent.fgyd4-2.fna.fbcdn.net/v/t1.6435-9/172375004_1948773731927161_2405534761071305864_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=SjkJrU_gLBwAX-T1ZS1&tn=VffU5FtGNLn--OnT&_nc_ht=scontent.fgyd4-2.fna&oh=3f8a9c3a35a3d2ced8895143fedd1395&oe=60EC5C29",
+        comment: "The shoes are way more cool, fantastic, fabulous, vibrant, striking and showy than I expected.I’m proud owner of Naughty Schnitzel Shoes, Das Cognac Boots and now Fuchsia Shoes.I adore each pair I've got.All of them are very comfy and durable, looking great after years and years of wearing them.Atheist Team, thank you so much for being so nice, responsive and for making great shoes.",
+        rating: 4.9,
+        date: "April 19, 2021 3:21 PM"
+    },
+    {
+        reviewId: 1,
+        productId: 7,
+        fullName: "Talıb İsmayılzadə",
+        photo: "https://scontent.fgyd4-2.fna.fbcdn.net/v/t1.6435-9/172375004_1948773731927161_2405534761071305864_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=SjkJrU_gLBwAX-T1ZS1&tn=VffU5FtGNLn--OnT&_nc_ht=scontent.fgyd4-2.fna&oh=3f8a9c3a35a3d2ced8895143fedd1395&oe=60EC5C29",
+        comment: "The shoes are way more cool, fantastic, fabulous, vibrant, striking and showy than I expected.I’m proud owner of Naughty Schnitzel Shoes, Das Cognac Boots and now Fuchsia Shoes.I adore each pair I've got.All of them are very comfy and durable, looking great after years and years of wearing them.Atheist Team, thank you so much for being so nice, responsive and for making great shoes.",
+        rating: 4.9,
+        date: "April 19, 2021 3:21 PM"
+    },
+    {
+        reviewId: 1,
+        productId: 7,
+        fullName: "Talıb İsmayılzadə",
+        photo: "https://scontent.fgyd4-2.fna.fbcdn.net/v/t1.6435-9/172375004_1948773731927161_2405534761071305864_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=SjkJrU_gLBwAX-T1ZS1&tn=VffU5FtGNLn--OnT&_nc_ht=scontent.fgyd4-2.fna&oh=3f8a9c3a35a3d2ced8895143fedd1395&oe=60EC5C29",
+        comment: "The shoes are way more cool, fantastic, fabulous, vibrant, striking and showy than I expected.I’m proud owner of Naughty Schnitzel Shoes, Das Cognac Boots and now Fuchsia Shoes.I adore each pair I've got.All of them are very comfy and durable, looking great after years and years of wearing them.Atheist Team, thank you so much for being so nice, responsive and for making great shoes.",
+        rating: 4.9,
+        date: "April 19, 2021 3:21 PM"
+    },
+    {
+        reviewId: 1,
+        productId: 7,
+        fullName: "Talıb İsmayılzadə",
+        photo: "https://scontent.fgyd4-2.fna.fbcdn.net/v/t1.6435-9/172375004_1948773731927161_2405534761071305864_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=SjkJrU_gLBwAX-T1ZS1&tn=VffU5FtGNLn--OnT&_nc_ht=scontent.fgyd4-2.fna&oh=3f8a9c3a35a3d2ced8895143fedd1395&oe=60EC5C29",
+        comment: "The shoes are way more cool, fantastic, fabulous, vibrant, striking and showy than I expected.I’m proud owner of Naughty Schnitzel Shoes, Das Cognac Boots and now Fuchsia Shoes.I adore each pair I've got.All of them are very comfy and durable, looking great after years and years of wearing them.Atheist Team, thank you so much for being so nice, responsive and for making great shoes.",
+        rating: 4.9,
+        date: "April 19, 2021 3:21 PM"
+    },
+    {
+        reviewId: 1,
+        productId: 7,
+        fullName: "Talıb İsmayılzadə",
+        photo: "https://scontent.fgyd4-2.fna.fbcdn.net/v/t1.6435-9/172375004_1948773731927161_2405534761071305864_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=SjkJrU_gLBwAX-T1ZS1&tn=VffU5FtGNLn--OnT&_nc_ht=scontent.fgyd4-2.fna&oh=3f8a9c3a35a3d2ced8895143fedd1395&oe=60EC5C29",
+        comment: "The shoes are way more cool, fantastic, fabulous, vibrant, striking and showy than I expected.I’m proud owner of Naughty Schnitzel Shoes, Das Cognac Boots and now Fuchsia Shoes.I adore each pair I've got.All of them are very comfy and durable, looking great after years and years of wearing them.Atheist Team, thank you so much for being so nice, responsive and for making great shoes.",
+        rating: 4.9,
+        date: "April 19, 2021 3:21 PM"
+    },
+    {
+        reviewId: 1,
+        productId: 7,
+        fullName: "Talıb İsmayılzadə",
+        photo: "https://scontent.fgyd4-2.fna.fbcdn.net/v/t1.6435-9/172375004_1948773731927161_2405534761071305864_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=SjkJrU_gLBwAX-T1ZS1&tn=VffU5FtGNLn--OnT&_nc_ht=scontent.fgyd4-2.fna&oh=3f8a9c3a35a3d2ced8895143fedd1395&oe=60EC5C29",
+        comment: "The shoes are way more cool, fantastic, fabulous, vibrant, striking and showy than I expected.I’m proud owner of Naughty Schnitzel Shoes, Das Cognac Boots and now Fuchsia Shoes.I adore each pair I've got.All of them are very comfy and durable, looking great after years and years of wearing them.Atheist Team, thank you so much for being so nice, responsive and for making great shoes.",
+        rating: 4.9,
+        date: "April 19, 2021 3:21 PM"
+    },
+    {
+        reviewId: 1,
+        productId: 7,
+        fullName: "Talıb İsmayılzadə",
+        photo: "https://scontent.fgyd4-2.fna.fbcdn.net/v/t1.6435-9/172375004_1948773731927161_2405534761071305864_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=SjkJrU_gLBwAX-T1ZS1&tn=VffU5FtGNLn--OnT&_nc_ht=scontent.fgyd4-2.fna&oh=3f8a9c3a35a3d2ced8895143fedd1395&oe=60EC5C29",
+        comment: "The shoes are way more cool, fantastic, fabulous, vibrant, striking and showy than I expected.I’m proud owner of Naughty Schnitzel Shoes, Das Cognac Boots and now Fuchsia Shoes.I adore each pair I've got.All of them are very comfy and durable, looking great after years and years of wearing them.Atheist Team, thank you so much for being so nice, responsive and for making great shoes.",
+        rating: 4.9,
+        date: "April 19, 2021 3:21 PM"
+    },
+    {
+        reviewId: 1,
+        productId: 7,
+        fullName: "Talıb İsmayılzadə",
+        photo: "https://scontent.fgyd4-2.fna.fbcdn.net/v/t1.6435-9/172375004_1948773731927161_2405534761071305864_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=SjkJrU_gLBwAX-T1ZS1&tn=VffU5FtGNLn--OnT&_nc_ht=scontent.fgyd4-2.fna&oh=3f8a9c3a35a3d2ced8895143fedd1395&oe=60EC5C29",
+        comment: "The shoes are way more cool, fantastic, fabulous, vibrant, striking and showy than I expected.I’m proud owner of Naughty Schnitzel Shoes, Das Cognac Boots and now Fuchsia Shoes.I adore each pair I've got.All of them are very comfy and durable, looking great after years and years of wearing them.Atheist Team, thank you so much for being so nice, responsive and for making great shoes.",
+        rating: 4.9,
+        date: "April 19, 2021 3:21 PM"
+    },
+    {
+        reviewId: 1,
+        productId: 7,
+        fullName: "Talıb İsmayılzadə",
+        photo: "https://scontent.fgyd4-2.fna.fbcdn.net/v/t1.6435-9/172375004_1948773731927161_2405534761071305864_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=SjkJrU_gLBwAX-T1ZS1&tn=VffU5FtGNLn--OnT&_nc_ht=scontent.fgyd4-2.fna&oh=3f8a9c3a35a3d2ced8895143fedd1395&oe=60EC5C29",
+        comment: "The shoes are way more cool, fantastic, fabulous, vibrant, striking and showy than I expected.I’m proud owner of Naughty Schnitzel Shoes, Das Cognac Boots and now Fuchsia Shoes.I adore each pair I've got.All of them are very comfy and durable, looking great after years and years of wearing them.Atheist Team, thank you so much for being so nice, responsive and for making great shoes.",
+        rating: 4.9,
+        date: "April 19, 2021 3:21 PM"
+    },
+    {
+        reviewId: 1,
+        productId: 7,
+        fullName: "Talıb İsmayılzadə",
+        photo: "https://scontent.fgyd4-2.fna.fbcdn.net/v/t1.6435-9/172375004_1948773731927161_2405534761071305864_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=SjkJrU_gLBwAX-T1ZS1&tn=VffU5FtGNLn--OnT&_nc_ht=scontent.fgyd4-2.fna&oh=3f8a9c3a35a3d2ced8895143fedd1395&oe=60EC5C29",
+        comment: "The shoes are way more cool, fantastic, fabulous, vibrant, striking and showy than I expected.I’m proud owner of Naughty Schnitzel Shoes, Das Cognac Boots and now Fuchsia Shoes.I adore each pair I've got.All of them are very comfy and durable, looking great after years and years of wearing them.Atheist Team, thank you so much for being so nice, responsive and for making great shoes.",
+        rating: 4.9,
+        date: "April 19, 2021 3:21 PM"
+    },
+    {
+        reviewId: 1,
+        productId: 7,
+        fullName: "Talıb İsmayılzadə",
+        photo: "https://scontent.fgyd4-2.fna.fbcdn.net/v/t1.6435-9/172375004_1948773731927161_2405534761071305864_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=SjkJrU_gLBwAX-T1ZS1&tn=VffU5FtGNLn--OnT&_nc_ht=scontent.fgyd4-2.fna&oh=3f8a9c3a35a3d2ced8895143fedd1395&oe=60EC5C29",
+        comment: "The shoes are way more cool, fantastic, fabulous, vibrant, striking and showy than I expected.I’m proud owner of Naughty Schnitzel Shoes, Das Cognac Boots and now Fuchsia Shoes.I adore each pair I've got.All of them are very comfy and durable, looking great after years and years of wearing them.Atheist Team, thank you so much for being so nice, responsive and for making great shoes.",
+        rating: 4.9,
+        date: "April 19, 2021 3:21 PM"
     }
 ]
 
@@ -124,43 +214,53 @@ const advertismentProducts = [
 const categories = [
     {
         categoryId: 1,
-        title: "Man Shirt",
-        icon: "https://i.ibb.co/YRBH08h/tshirt-112188.png"
+        title: "Shirt",
+        icon: "https://i.ibb.co/ZVT35Jn/shirt.png"
     },
     {
         categoryId: 2,
-        title: "Dress",
-        icon: "https://cdn.stocksnap.io/img-thumbs/960w/nike-shoes_0R37EU64ZH.jpg"
+        title: "Bikini",
+        icon: "https://i.ibb.co/DC9K8tT/bikini.png"
     },
     {
         categoryId: 3,
         title: "Dress",
-        icon: "https://cdn.stocksnap.io/img-thumbs/960w/nike-shoes_0R37EU64ZH.jpg"
+        icon: "https://i.ibb.co/YRBH08h/tshirt-112188.png"
     },
     {
         categoryId: 4,
-        title: "Dress",
-        icon: "https://cdn.stocksnap.io/img-thumbs/960w/nike-shoes_0R37EU64ZH.jpg"
+        title: "Work Equipment",
+        icon: "https://i.ibb.co/YRBH08h/tshirt-112188.png"
     },
     {
         categoryId: 5,
-        title: "Dress",
-        icon: "https://cdn.stocksnap.io/img-thumbs/960w/nike-shoes_0R37EU64ZH.jpg"
+        title: "Man Pants",
+        icon: "https://i.ibb.co/YRBH08h/tshirt-112188.png"
     },
     {
         categoryId: 6,
-        title: "Dress",
-        icon: "https://cdn.stocksnap.io/img-thumbs/960w/nike-shoes_0R37EU64ZH.jpg"
+        title: "Man Shoes",
+        icon: "https://i.ibb.co/YRBH08h/tshirt-112188.png"
     },
     {
         categoryId: 7,
-        title: "Dress",
-        icon: "https://cdn.stocksnap.io/img-thumbs/960w/nike-shoes_0R37EU64ZH.jpg"
+        title: "Man Underwear",
+        icon: "https://i.ibb.co/YRBH08h/tshirt-112188.png"
     },
     {
         categoryId: 8,
-        title: "Dress",
-        icon: "https://cdn.stocksnap.io/img-thumbs/960w/nike-shoes_0R37EU64ZH.jpg"
+        title: "Man T-Shirt",
+        icon: "https://i.ibb.co/YRBH08h/tshirt-112188.png"
+    },
+    {
+        categoryId: 9,
+        title: "Woman Bag",
+        icon: "https://i.ibb.co/YRBH08h/tshirt-112188.png"
+    },
+    {
+        categoryId: 10,
+        title: "Woman Pants",
+        icon: "https://i.ibb.co/YRBH08h/tshirt-112188.png"
     }
 ]
 
@@ -168,7 +268,7 @@ const products = [
     {
         productId: 1,
         title: "Nike Sportswear Futura Luxe",
-        specification: "",
+        specification: "A versatile and stylish design, the Nike Sportswear Futura Cross-Body Bag can be worn as a hip pack, over-the-shoulder, clutch or cross-body bag.2 zip pockets help keep your essentials organised, while a satin lining and Swoosh zip pulls elevate the look.This product is made from at least 65% recycled polyester fibres.",
         thumbnailImage: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/aa59e8dd-8e26-4fac-90ff-c85f4bdb4b80/sportswear-futura-luxe-%C3%A7apraz-%C3%A7antas%C4%B1-SPHsqZ.png",
         images: [
             "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/aa59e8dd-8e26-4fac-90ff-c85f4bdb4b80/sportswear-futura-luxe-%C3%A7apraz-%C3%A7antas%C4%B1-SPHsqZ.png",
@@ -189,7 +289,7 @@ const products = [
     {
         productId: 2,
         title: "Nike Air Max 90 LX",
-        specification: "",
+        specification: "Crown your feet in the Nike Air Max 90 LX.Staying true to athletic roots, it updates the streetwear icon with hits of richly textured plant material (crafted from pineapple-leaf fibre) on the Swoosh and heel.The cork-infused Waffle outsole adds earthy sophistication to every outfit, while the embroidered pineapple on the tongue delivers the perfect summertime flavour.Lace up!'Cause you're never too old to go pineapples.",
         thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c089ca4a-23bb-411b-b826-7c6fd7e7d0f1/air-max-90-60-ayakkab%C4%B1s%C4%B1-DQbQ5r.png",
         images: [
             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c089ca4a-23bb-411b-b826-7c6fd7e7d0f1/air-max-90-60-ayakkab%C4%B1s%C4%B1-DQbQ5r.png",
@@ -210,7 +310,7 @@ const products = [
     {
         productId: 3,
         title: "Jordan Max Aura 2",
-        specification: "",
+        specification: "The Jordan Max Aura 2 is inspired by the brand's rich legacy of performance basketball shoes. The design takes cues from past Air Jordans with lightweight cushioning and a look that's money on the street.\n\nColour Shown: Black/Light Smoke Grey/White/Tropical Twist\nStyle: CK6636-007",
         thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/81e221df-6553-48db-861d-329cb581cc59/jordan-max-aura-2-ayakkab%C4%B1s%C4%B1-vssjMJ.png",
         images: [
             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/81e221df-6553-48db-861d-329cb581cc59/jordan-max-aura-2-ayakkab%C4%B1s%C4%B1-vssjMJ.png",
@@ -230,7 +330,7 @@ const products = [
     {
         productId: 4,
         title: "Nike Air Force 1 Low",
-        specification: "",
+        specification: "In 1971, the legend of the Swoosh was born when it was stitched to a pair of football boots, drawing inspiration from the Greek goddess Nike.Embodying the spirit of sport and its power to unify, the Swoosh symbolises progress from the tracks to the fields to the streets.Celebrate this icon your way with what may be our greatest shoe of all time: the Nike Air Force 1 Unlocked By You.\n\nColour Shown: Multi-Colour/Multi-Colour/Multi-Colour/Multi-Colour\nStyle: DJ7015-991",
         thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/b4ddd9bb-a650-423a-9cd9-a276f3a56edf/air-force-1-low-ayakkab%C4%B1-hb72wk.png",
         images: [
             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/b4ddd9bb-a650-423a-9cd9-a276f3a56edf/air-force-1-low-ayakkab%C4%B1-hb72wk.png",
@@ -252,7 +352,7 @@ const products = [
     {
         productId: 5,
         title: "Nike Air Force 1 Mid By You",
-        specification: "",
+        specification: "The Nike Air Force 1 Mid By You became an instant icon after its debut in 1982. Now you can make this classic your own with a colour palette inspired by the '80s and '90s and premium materials including smooth and rippled leather and a new, matching sidewall selection. It's time to create a look that speaks to you.",
         thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0499abab-0fea-4aa7-a712-83e1911492eb/custom-nike-air-force-1-mid-by-you.png",
         images: [
             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0499abab-0fea-4aa7-a712-83e1911492eb/custom-nike-air-force-1-mid-by-you.png",
@@ -270,7 +370,7 @@ const products = [
     {
         productId: 6,
         title: "Jordan MA2",
-        specification: "",
+        specification: "Shatter the sneaker status quo in the Jordan MA2. Made from a mix of suede, full-grain leather and a variety of textiles, it's got unconventional labels, technical micro-graphics and raw foam edges for a balance of new and classic. Easy to get on and off, it looks good with just about anything.\n\nColour Shown: Light Smoke Grey/University Blue/Pollen/Game Royal\nStyle: CV8122-004",
         thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/fb5fdd9f-a9d0-4bcc-8258-d4fbf6751de0/jordan-ma2-ayakkab%C4%B1-dmkgC9.png",
         images: [
             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/fb5fdd9f-a9d0-4bcc-8258-d4fbf6751de0/jordan-ma2-ayakkab%C4%B1-dmkgC9.png",
@@ -290,7 +390,7 @@ const products = [
     {
         productId: 7,
         title: "Jordan MA2",
-        specification: "",
+        specification: "Shatter the sneaker status quo in the Jordan MA2. Made from a mix of suede, full-grain leather and a variety of textiles, it's got unconventional labels, technical micro-graphics and raw foam edges for a balance of new and classic. Easy to get on and off, it looks good with just about anything.\n\nColour Shown: Light Smoke Grey/University Blue/Pollen/Game Royal\nStyle: CV8122-004",
         thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/be84ba96-30c0-4d79-a0fe-978e5dde301b/jordan-ma2-ayakkab%C4%B1s%C4%B1-Pd6D4H.png",
         images: [
             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/be84ba96-30c0-4d79-a0fe-978e5dde301b/jordan-ma2-ayakkab%C4%B1s%C4%B1-Pd6D4H.png",
@@ -309,54 +409,104 @@ const products = [
     },
     {
         productId: 8,
-        title: "",
-        specification: "",
-        thumbnailImage: "",
-        images: [],
+        title: "Nike Air Max 95",
+        specification: "Your favourite legend that's inspired by the human body and our running DNA returns.This time, the Nike Air Max 95 mashes vibrant colours from your favourite past iterations all together.The iconic side panels represent muscles while Max Air cushions every step.\n\nColour Shown: Off-Noir/Black/Dark Smoke Grey/Solar Red \nStyle: DN8020-001",
+        thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/45a4c312-9da3-4086-a8d3-619b33a432c3/air-max-95-ayakkab%C4%B1s%C4%B1-klv0B9.png",
+        images: [
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/45a4c312-9da3-4086-a8d3-619b33a432c3/air-max-95-ayakkab%C4%B1s%C4%B1-klv0B9.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/3539a5a9-c29f-4e69-bb02-cc115eaee550/air-max-95-ayakkab%C4%B1s%C4%B1-klv0B9.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/f05557dd-6378-46fa-901c-0db9d61bd172/air-max-95-ayakkab%C4%B1s%C4%B1-klv0B9.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/d65448b6-f00f-4f43-9d3c-321877ed88f0/air-max-95-ayakkab%C4%B1s%C4%B1-klv0B9.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/f1f3ce37-5c89-499e-b6e8-430919d292c3/air-max-95-ayakkab%C4%B1s%C4%B1-klv0B9.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/13b3328b-a959-41ee-b29d-b08aa259ade1/air-max-95-ayakkab%C4%B1s%C4%B1-klv0B9.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/2a484bf4-f504-4454-8ad8-69f5d525ae37/air-max-95-ayakkab%C4%B1s%C4%B1-klv0B9.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/7ed45a90-23eb-4d39-95c8-2d77329ab8ff/air-max-95-ayakkab%C4%B1s%C4%B1-klv0B9.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/afca5525-dfc0-4b8f-8fad-a5c5be550297/air-max-95-ayakkab%C4%B1s%C4%B1-klv0B9.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/e42086ed-2aae-450f-af98-29f50888223a/air-max-95-ayakkab%C4%B1s%C4%B1-klv0B9.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/8fdce558-50ce-4720-95f3-ef87be22178e/air-max-95-ayakkab%C4%B1s%C4%B1-klv0B9.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/648619de-1dbf-4b23-8f2b-319dd6ad9b06/air-max-95-ayakkab%C4%B1s%C4%B1-klv0B9.png"
+        ],
         rating: 4.7,
-        price: 534.33,
-        discountPrice: 299.43,
-        discountPercent: 24
+        price: 641.33,
+        discountPrice: 309.12,
+        discountPercent: 27
     },
     {
         productId: 9,
-        title: "",
-        specification: "",
-        thumbnailImage: "",
-        images: [],
-        rating: 4.7,
-        price: 534.33,
-        discountPrice: 299.43,
-        discountPercent: 24
+        title: "Nike Air Max 90 SE",
+        specification: "Nothing as fly, nothing as comfortable, nothing as proven—the Nike Air Max 90 SE celebrates the 50th anniversary of the Swoosh.Staying true to its running roots with an iconic Waffle sole, stitched overlays and classic TPU accents on the eyelets and heel, it now features the original Swoosh design and removable lace aglet.Other fast-paced details add to the celebratory look.\n\nColour Shown: Sail/Cream II/Light Bone/White\nStyle: DB0636-100",
+        thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/d3886aeb-497a-4207-bbb0-469469c806c0/air-max-90-se-shoes-4sdQbc.png",
+        images: [
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/d3886aeb-497a-4207-bbb0-469469c806c0/air-max-90-se-shoes-4sdQbc.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/d8438c91-79c9-404b-a5c8-4a9b43b53377/air-max-90-se-shoes-4sdQbc.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/fc5baaee-7be4-4d6f-8a24-b0e6b8da8b6c/air-max-90-se-shoes-4sdQbc.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/74e19b96-ee68-404b-a288-4bbd1730174d/air-max-90-se-shoes-4sdQbc.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/8a62b068-a08c-4e95-9f6a-00ed4657ee85/air-max-90-se-shoes-4sdQbc.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/3af628e2-5e0f-4037-a9f8-4051f497f6c7/air-max-90-se-shoes-4sdQbc.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/2e8cbe54-5d35-478b-b0f3-8b9d47ee9a16/air-max-90-se-shoes-4sdQbc.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/5a48e90b-fbec-4a32-85da-44f79870241f/air-max-90-se-shoes-4sdQbc.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/9a081ee8-6f19-4bcf-98bc-09e6696c2590/air-max-90-se-shoes-4sdQbc.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/2f81c946-57dc-44fc-b046-30d49d73c447/air-max-90-se-shoes-4sdQbc.png"
+        ],
+        rating: 4.9,
+        price: 731.78,
+        discountPrice: 365.89,
+        discountPercent: 50
     },
     {
         productId: 10,
-        title: "",
-        specification: "",
-        thumbnailImage: "",
-        images: [],
-        rating: 4.7,
-        price: 534.33,
-        discountPrice: 299.43,
-        discountPercent: 24
+        title: "Nike Air Force 1 Low",
+        specification: "In 1971, the legend of the Swoosh was born when it was stitched to a pair of football boots, drawing inspiration from the Greek goddess Nike.Embodying the spirit of sport and its power to unify, the Swoosh symbolises progress from the tracks to the fields to the streets.Celebrate this icon your way with what may be our greatest shoe of all time: the Nike Air Force 1 Unlocked By You.\n\nColour Shown: Multi-Colour/Multi-Colour/Multi-Colour/Multi-Colour\nStyle: DJ7015-991",
+        thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/726ac2fa-0cbb-4542-88f4-8aefeb7ea564/custom-nike-air-force-1-unlocked-by-you.png",
+        images: [
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/726ac2fa-0cbb-4542-88f4-8aefeb7ea564/custom-nike-air-force-1-unlocked-by-you.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/11d08a72-c497-483a-a9e6-d88865f38510/custom-nike-air-force-1-unlocked-by-you.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/b78d9081-d7e9-4033-bcb2-52c4207bd692/custom-nike-air-force-1-unlocked-by-you.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/1d5a1899-74e9-423e-bcc4-32c584d608d4/custom-nike-air-force-1-unlocked-by-you.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/166c1c71-231a-486a-8ded-4dfd6d379119/custom-nike-air-force-1-unlocked-by-you.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/05451b2c-773d-417b-b735-64a7384c923c/custom-nike-air-force-1-unlocked-by-you.png"
+        ],
+        rating: 4.5,
+        price: 341.12,
+        discountPrice: 239.43,
+        discountPercent: 30
     },
     {
         productId: 11,
-        title: "",
-        specification: "",
-        thumbnailImage: "",
-        images: [],
-        rating: 4.7,
-        price: 534.33,
-        discountPrice: 299.43,
-        discountPercent: 24
+        title: "Jordan MA2",
+        specification: "Shatter the sneaker status quo in the Jordan MA2. Made from a mix of suede, full-grain leather and a variety of textiles, it features unconventional labels, technical micro-graphics and raw foam edges for a balance of new and classic. Easy to get on and off and effortlessly comfortable, the shoe is a stylish symbol of Jordan attitude and innovation.\n\nColour Shown: White/University Red/Light Smoke Grey/Black\nStyle: CW5992-106",
+        thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/be54a636-ed40-485f-b939-c452a9c501c4/jordan-ma2-shoe-Pn2QSQ.png",
+        images: [
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/be54a636-ed40-485f-b939-c452a9c501c4/jordan-ma2-shoe-Pn2QSQ.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/e998f8a8-bce2-44f6-9816-d8d0bbdaa0d3/jordan-ma2-shoe-Pn2QSQ.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/981d85d0-c354-4c78-be4a-fa754abad06b/jordan-ma2-shoe-Pn2QSQ.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/efdd7ef2-408f-4f75-8138-bc2e42c0ae9e/jordan-ma2-shoe-Pn2QSQ.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/f5ee84bf-2e10-495a-9e0a-88d317f3c859/jordan-ma2-shoe-Pn2QSQ.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/3ebd91e6-4503-4ed2-bd72-b58f78ac8d6c/jordan-ma2-shoe-Pn2QSQ.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/f5542810-ae7f-4988-9f24-1f61053697f5/jordan-ma2-shoe-Pn2QSQ.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/7329bdd6-63de-412b-92ea-a489624a05b6/jordan-ma2-shoe-Pn2QSQ.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/49327ef4-b85e-437a-be6f-6ed95c59f230/jordan-ma2-shoe-Pn2QSQ.png"
+        ],
+        rating: 5.0,
+        price: 750.50,
+        discountPrice: 375.25,
+        discountPercent: 50
     },
     {
         productId: 12,
-        title: "",
-        specification: "",
-        thumbnailImage: "",
-        images: [],
+        title: "Nike Pegasus Trail 3",
+        specification: "Move seamlessly from cityscapes to trails without compromising your aesthetic in the Nike Pegasus Trail 3.Desaturated tones and hidden wilderness markers are paired with the same cushioned comfort and traction you love.Support around the midfoot helps you feel secure on your journey, tackling tough terrain and city lanes in one classic shoe.",
+        thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f5611d3a-8b81-4bbe-a9be-1688897b26e4/pegasus-trail-3-trail-running-shoe-ctxxng.png",
+        images: [
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f5611d3a-8b81-4bbe-a9be-1688897b26e4/pegasus-trail-3-trail-running-shoe-ctxxng.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/c0a8a49d-80af-4959-a3e0-516e17bae1d9/pegasus-trail-3-trail-running-shoe-ctxxng.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/a5368c95-cf43-4e01-b719-88cd4acfc5c2/pegasus-trail-3-trail-running-shoe-ctxxng.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/4b9ddd1b-e574-473d-aed3-23634ccfecf2/pegasus-trail-3-trail-running-shoe-ctxxng.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/b83a0824-00a7-4e09-9940-2fc98117d40e/pegasus-trail-3-trail-running-shoe-ctxxng.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/2a89a487-e349-459a-856c-2f47c5cc2f21/pegasus-trail-3-trail-running-shoe-ctxxng.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/b69983fd-6543-4dc7-850d-165e3a2ddd96/pegasus-trail-3-trail-running-shoe-ctxxng.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/0adfcab8-a151-4568-bb5b-44c1766f70e0/pegasus-trail-3-trail-running-shoe-ctxxng.png"
+        ],
         rating: 4.7,
         price: 534.33,
         discountPrice: 299.43,
@@ -364,36 +514,64 @@ const products = [
     },
     {
         productId: 13,
-        title: "",
-        specification: "",
-        thumbnailImage: "",
-        images: [],
-        rating: 4.7,
-        price: 534.33,
-        discountPrice: 299.43,
-        discountPercent: 24
+        title: "Nike Air Zoom Terra Kiger 7",
+        specification: "Because in this sport, we all finish.The Nike Air Zoom Terra Kiger 7 embraces the motto `Leave nobody behind` and it's inscribed on the tongue with a reflective-design print to shine through every run, night and day.Fast and lightweight, the shoe delivers a breathable and secure feel as you race over rocky paths.Plus, an S-hook is connected to the laces so you can easily latch them onto your bag and take them on the go.",
+        thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/d5ca3ab8-dc32-4e67-b9ae-9d864cef6b34/air-zoom-terra-kiger-7-trail-running-shoe-GZTMxP.png",
+        images: [
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/d5ca3ab8-dc32-4e67-b9ae-9d864cef6b34/air-zoom-terra-kiger-7-trail-running-shoe-GZTMxP.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/ddd78b7b-a2a6-4efe-aa6a-f03f8d1208a6/air-zoom-terra-kiger-7-trail-running-shoe-GZTMxP.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/e4b837f6-6a95-49c1-91ed-e61440e5f2ee/air-zoom-terra-kiger-7-trail-running-shoe-GZTMxP.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/40203b80-490c-4e85-9d5e-1ba58fe1c9f8/air-zoom-terra-kiger-7-trail-running-shoe-GZTMxP.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/7e96883a-29ad-4a86-9bc0-63b3222ea07e/air-zoom-terra-kiger-7-trail-running-shoe-GZTMxP.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/4b97f1c5-07e4-486b-b273-f9d088df5e77/air-zoom-terra-kiger-7-trail-running-shoe-GZTMxP.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/ee3c7dda-4eea-4616-9a55-f839331232fe/air-zoom-terra-kiger-7-trail-running-shoe-GZTMxP.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/a2094197-74c9-402a-a32a-7ef9f87fc37f/air-zoom-terra-kiger-7-trail-running-shoe-GZTMxP.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/fd133988-cd74-4e5e-87f5-73dbd1c5bab6/air-zoom-terra-kiger-7-trail-running-shoe-GZTMxP.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/cd957def-bd5a-44ff-9fe4-485510ab1899/air-zoom-terra-kiger-7-trail-running-shoe-GZTMxP.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/00b90ac8-c357-4216-8d30-01735b72265a/air-zoom-terra-kiger-7-trail-running-shoe-GZTMxP.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/7617dae8-5a73-4f79-b366-7dfb65afff87/air-zoom-terra-kiger-7-trail-running-shoe-GZTMxP.png"
+        ],
+        rating: 4.1,
+        price: 124.53,
+        discountPrice: 112.43,
+        discountPercent: 10
     },
     {
         productId: 14,
-        title: "",
-        specification: "",
-        thumbnailImage: "",
-        images: [],
-        rating: 4.7,
-        price: 534.33,
-        discountPrice: 299.43,
-        discountPercent: 24
+        title: "Nike Air Max 2090",
+        specification: "Bring the past into the future with the Nike Air Max 2090, a bold look inspired by the DNA of the iconic Air Max 90.Brand-new Max Air cushioning underfoot adds unparalleled comfort while mesh and cool-coloured textiles blend with timeless OG features for an edgy, modernised look.\n\nColour Shown: Black/Bleached Aqua/Summit White/Chile Red\nStyle: DA4292-001",
+        thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/17c3e41e-3310-4f1d-8096-d892240b534a/air-max-2090-shoes-hdzbld.png",
+        images: [
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/17c3e41e-3310-4f1d-8096-d892240b534a/air-max-2090-shoes-hdzbld.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/3d490361-bc57-4c22-9a20-96b1f5a3d6c3/air-max-2090-shoes-hdzbld.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/b84bc880-90b5-4dfd-994e-4bbf14bedba6/air-max-2090-shoes-hdzbld.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/346134ce-332c-47e1-b58a-7c25208ae9f9/air-max-2090-shoes-hdzbld.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/3d18fc26-5eec-4075-b065-231530079db3/air-max-2090-shoes-hdzbld.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/02e9a842-8087-4c94-987e-fde5235d0f57/air-max-2090-shoes-hdzbld.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/e984d3fc-ba7c-4dcc-8b7a-e811992e048e/air-max-2090-shoes-hdzbld.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/2e92a7c3-3455-40fc-8484-7898e242a78f/air-max-2090-shoes-hdzbld.png"
+        ],
+        rating: 4.9,
+        price: 129.95,
+        discountPrice: 77.97,
+        discountPercent: 40
     },
     {
         productId: 15,
-        title: "",
-        specification: "",
-        thumbnailImage: "",
-        images: [],
-        rating: 4.7,
-        price: 534.33,
-        discountPrice: 299.43,
-        discountPercent: 24
+        title: "Jordan Break",
+        specification: "Featuring a fixed strap over the top of the foot, the Jordan Break Slide uses durable synthetic leather and lightweight foam cushioning for underfoot comfort.\n\nColour Shown: University Red/Metallic Silver\nStyle: AR6374-602",
+        thumbnailImage: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/18907d4a-f88d-4ec5-96a9-6e09643ac448/jordan-break-slides-kv40Rq.png",
+        images: [
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/18907d4a-f88d-4ec5-96a9-6e09643ac448/jordan-break-slides-kv40Rq.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/4a29e7c3-a5c1-4827-a948-9dc81f054e64/jordan-break-slides-kv40Rq.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/5235414a-5002-452c-ae41-b62690ed49b6/jordan-break-slides-kv40Rq.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/3a381da9-dcca-4e56-ac51-6ff92a94ca37/jordan-break-slides-kv40Rq.png",
+            "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/9c1b8887-e104-4c0a-b635-390a55da9d11/jordan-break-slides-kv40Rq.png"
+        ],
+        rating: 5.0,
+        price: 26.95,
+        discountPrice: 21.97,
+        discountPercent: 18
     }
 ]
 
