@@ -215,7 +215,7 @@ const categories = [
     {
         categoryId: 1,
         title: "Shirt",
-        icon: "https://i.ibb.co/ZVT35Jn/shirt.png"
+        icon: "https://i.ibb.co/Tm3WwzS/bd58a83e715d576c04022d598096b890.png"
     },
     {
         categoryId: 2,
