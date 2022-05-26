@@ -50,7 +50,7 @@ const reviews = [
         fullName: "Talıb İsmayılzadə",
         photo: "https://scontent.fgyd4-2.fna.fbcdn.net/v/t1.6435-9/172375004_1948773731927161_2405534761071305864_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=SjkJrU_gLBwAX-T1ZS1&tn=VffU5FtGNLn--OnT&_nc_ht=scontent.fgyd4-2.fna&oh=3f8a9c3a35a3d2ced8895143fedd1395&oe=60EC5C29",
         comment: "The shoes are way more cool, fantastic, fabulous, vibrant, striking and showy than I expected.I’m proud owner of Naughty Schnitzel Shoes, Das Cognac Boots and now Fuchsia Shoes.I adore each pair I've got.All of them are very comfy and durable, looking great after years and years of wearing them.Atheist Team, thank you so much for being so nice, responsive and for making great shoes.",
-        rating: 4.9,
+        rating: 4.8,
         date: "April 19, 2021 3:21 PM"
     },
     {
